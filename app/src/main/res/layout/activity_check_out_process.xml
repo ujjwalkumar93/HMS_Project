@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckOutProcess"
+   android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:background="@drawable/bck"
+    >
+
+
+    <TextView
+        android:id="@+id/idname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Guest Name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="#FF0000"/>
+
+    <TextView
+        android:id="@+id/idgname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="TextView"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/idmobile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idname"
+        app:layout_constraintVertical_bias="0.00999999" />
+
+    <TextView
+        android:id="@+id/idmobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="282dp"
+        android:layout_marginTop="10dp"
+        android:text="Mobile Number"
+        android:textColor="#FF0000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idgname" />
+
+    <TextView
+        android:id="@+id/idgmobile"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="TextView"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/ididtype"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idmobile"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/ididtype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="325dp"
+        android:layout_marginTop="8dp"
+        android:text="ID Name"
+        android:textColor="#FF0000"
+        app:layout_constraintBottom_toTopOf="@+id/idIdname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idgmobile" />
+
+    <TextView
+        android:id="@+id/idIdname"
+        android:layout_width="0dp"
+        android:layout_height="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="id"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/ididnumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ididtype" />
+
+    <TextView
+        android:id="@+id/ididnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="320dp"
+        android:text="ID Number"
+        android:textColor="#FF0000"
+        app:layout_constraintBottom_toTopOf="@+id/idgidnumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idIdname" />
+
+    <TextView
+        android:id="@+id/idgidnumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ididnumber" />
+
+    <TextView
+        android:id="@+id/idroomtype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="320dp"
+        android:layout_marginTop="10dp"
+        android:text="Room Type"
+        android:textColor="#FF0000"
+        app:layout_constraintBottom_toTopOf="@+id/idgrommtype"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idgidnumber" />
+
+    <TextView
+        android:id="@+id/idgrommtype"
+        android:layout_width="0dp"
+        android:layout_height="17dp"
+        android:text="TextView"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idroomtype" />
+
+    <TextView
+        android:id="@+id/idroomnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="289dp"
+        android:text="Room Number"
+        android:textColor="#FF0000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.01"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idgrommtype"
+        app:layout_constraintVertical_bias="0.050000012" />
+
+    <TextView
+        android:id="@+id/idgroomnumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idroomnumber"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/idcheckin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="293dp"
+        android:layout_marginTop="8dp"
+        android:text="Check-in Date"
+        android:textColor="#FF0000"
+
+        app:layout_constraintBottom_toTopOf="@+id/idgcheckin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idgroomnumber" />
+
+    <TextView
+        android:id="@+id/idgcheckin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idcheckin"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/idcheckout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Check-out Date"
+        android:textColor="#FF0000"
+        app:layout_constraintBottom_toTopOf="@+id/idgcheckout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idgcheckin" />
+
+    <TextView
+        android:id="@+id/idgcheckout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idcheckout"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="322dp"
+        android:layout_marginTop="8dp"
+        android:text="Total Price"
+        android:textColor="#FF0000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idgcheckout" />
+
+    <TextView
+        android:id="@+id/idgprice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/id_btncheckOut"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:layout_marginTop="8dp"
+        android:text="CheckOut"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idgprice"
+        android:background="#333399"
+        android:textColor="#ffffff"/>
+
+
+</android.support.constraint.ConstraintLayout>

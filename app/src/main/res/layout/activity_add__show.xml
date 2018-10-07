@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Add_Show"
+    android:layout_marginTop="3dp"
+    android:layout_marginBottom="3dp"
+    android:background="@drawable/bck">
+
+
+    <TextView
+        android:id="@+id/id_hotelName"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        android:text="My Hotel"
+        android:textColor="#1B5E20"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/checkdel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="300dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="108dp"
+        android:text="Available Delux"
+        app:layout_constraintBottom_toTopOf="@+id/checksemi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.02"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/checksemi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="336dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:text="Available Semidelux"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkdel" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="180dp"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        app:layout_constraintBottom_toTopOf="@+id/id_addGuest"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:layout_weight=".75"
+            android:ems="10"
+            android:hint="Enter Id Number"
+            android:inputType="textPersonName"
+            android:background="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:text="Search"
+            android:textStyle="bold"
+            android:background="#d29ced"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/id_addGuest"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:text="Add Guest"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        android:textStyle="bold"
+        android:background="#d29ced"/>
+
+    <Button
+        android:id="@+id/btn_todaych"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:text="Today's CheckOut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_addGuest"
+        android:textStyle="bold"
+        android:background="#d29ced"/>
+
+    <Button
+        android:id="@+id/id_show"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:text="Show all checkedin guest"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_todaych"
+        android:background="#d29ced"/>
+
+    <Button
+        android:id="@+id/btn_guestHistory"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:text="SHOW ALL GUEST HISTORY"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_show"
+        app:layout_constraintVertical_bias="0.0"
+        android:background="#6200EE"/>
+
+    <TextView
+        android:id="@+id/avld"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="185dp"
+        android:layout_marginTop="57dp"
+        android:text="xxxx"
+        android:textStyle="bold"
+        android:textColor="#BF360C"
+        app:layout_constraintBottom_toTopOf="@+id/checksemi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintStart_toEndOf="@+id/checkdel"
+        app:layout_constraintTop_toBottomOf="@+id/id_hotelName" />
+
+    <TextView
+        android:id="@+id/avlS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="23dp"
+        android:layout_marginEnd="152dp"
+        android:layout_marginTop="20dp"
+        android:text="xxxx"
+        android:textStyle="bold"
+        android:textColor="#BF360C"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintStart_toEndOf="@+id/checksemi"
+        app:layout_constraintTop_toBottomOf="@+id/avld" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    tools:context=".Dashboard"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp"
+    android:background="@drawable/bck">
+
+
+    <EditText
+        android:id="@+id/id_guestName"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="30dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Guest Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/id_mob"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/id_mob"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Mobile Number"
+        android:inputType="phone"
+        app:layout_constraintBottom_toTopOf="@+id/radiogroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_guestName" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_mob">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Aadhar"
+            android:textColor="#FF0000"/>
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="PAN"
+            android:textColor="#FF0000"/>
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Voter id"
+            android:textColor="#FF0000"/>
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/id_idNum"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="263dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Id Number"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radiogroup"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="223dp"
+        android:layout_marginEnd="141dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_idNum"
+        app:layout_constraintVertical_bias="0.00999999">
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Delux"
+            android:textColor="#FF0000"/>
+
+        <RadioButton
+            android:id="@+id/radioButton5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Semi-Delux"
+            android:textColor="#FF0000"/>
+    </RadioGroup>
+
+
+    <EditText
+        android:id="@+id/room_num"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="288dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Room No."
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radiogroup2"
+        app:layout_constraintVertical_bias="0.00999999"
+        android:background="#FFFFFF"/>
+
+    <TextView
+        android:id="@+id/id_checkin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="CheckIn :"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/room_num"
+        android:textColor="#FF0000"
+       />
+
+    <TextView
+        android:id="@+id/id_checkout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="CheckOut :"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_checkin"
+        android:textColor="#FF0000"/>
+
+    <TextView
+        android:id="@+id/cal1View"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="217dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="dd/mm/yyyy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/id_checkin"
+        app:layout_constraintTop_toBottomOf="@+id/room_num" />
+
+    <TextView
+        android:id="@+id/cal2View"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="214dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="52dp"
+        android:text="dd/mm/yyyy"
+        android:focusable="true"
+        android:clickable="true"
+        android:focusableInTouchMode="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/id_checkout"
+        app:layout_constraintTop_toBottomOf="@+id/room_num" />
+
+    <EditText
+        android:id="@+id/id_price"
+        android:layout_width="110dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Price"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_checkout" />
+
+    <Button
+        android:id="@+id/id_btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="81dp"
+        android:layout_marginTop="16dp"
+        android:background="#4A148C"
+        android:text="Submit"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_price"
+        app:layout_constraintVertical_bias="0.100000024" />
+
+
+
+
+</android.support.constraint.ConstraintLayout>
